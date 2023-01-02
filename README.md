@@ -28,3 +28,5 @@ https://youtu.be/T_9NnAEaDxA
 https://youtu.be/6Yafe0qGJ2U
 
 Proviennent du jeu Nintendo DS 42 jeux indémodables.
+
+Images: Wikipedia
