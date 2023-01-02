@@ -161,12 +161,12 @@ while gamestate == "PLAY":
             gamestate = "STOP"
         if event.type== pygame.MOUSEBUTTONDOWN and event.button == 1:
             mouse=pygame.mouse.get_pos()
-            # Boutton  commencez
+            # Boutton commencez
             if mouse[0] in range(350,350+210) and mouse[1] in range(380,380+35):
                 if action_player == "main_menu":
                     pygame.mixer.Channel(1).play(pygame.mixer.Sound("assets/sound/sound_effect/button_click.wav"))
                     action_player = "nbjoueur_selector"
-            # Retour selection nombre de joueur
+            # Retour
             if mouse[0] in range(10,10+150) and mouse[1] in range(550,550+40):
                 if action_player == "nbjoueur_selector":
                     action_player = "main_menu"
@@ -184,7 +184,7 @@ while gamestate == "PLAY":
                             joueur_parier = i
                             pygame.mixer.pause()
                             pygame.mixer.Channel(1).play(pygame.mixer.Sound("assets/sound/sound_effect/button_click.wav"))
-                            pygame.mixer.Channel(2).play(pygame.mixer.Sound("assets/sound/music/ingame_music.mp3"))
+                            pygame.mixer.Channel(2).play(pygame.mixer.Sound("assets/sound/music/ingame_music.mp3"), -1)
                             pygame.mixer.Channel(2).set_volume(0.5)
                             action_player = "in-game"
                     y += 80
@@ -265,7 +265,7 @@ while gamestate == "PLAY":
                                         time.sleep(1.5)
                                     else:
                                         if tentative == 1:
-                                            message_ingame(joueur+1, "special_card_failed", carte_pose)
+                                            message_ingame(adversaire+1, "special_card_failed", carte_pose)
                                             carte_milieu.recuperer(joueur, paquetJoueur)
                                             time.sleep(2.1)
                                             message_ingame(joueur+1, "gain_card", carte_pose)
@@ -293,4 +293,5 @@ pygame.display.flip()
 time.sleep(5)
 pygame.quit()
                         
+
 
