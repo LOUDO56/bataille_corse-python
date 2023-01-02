@@ -2,7 +2,7 @@
 
 Tout d'abord, télécharger le source code en .zip et décomprésser le sur votre bureau sous forme de dossier.
 
-Pour lancer le programme, vous devez avoir en premier lieu le logiciel <a href="https://thonny.org/">Thonny</a> et <a href ="https://www.python.org/downloads/">Python</a>. Ensuite, lancer le fichier `main.py` 
+Pour lancer le programme, vous devez avoir en premier lieu le logiciel <a href="https://thonny.org/" target="_blank">Thonny</a> et <a href ="https://www.python.org/downloads/" target="_blank">Python</a>. Ensuite, lancer le fichier `main.py` 
 avec Thonny.
 
 ## Les libraries à installer
