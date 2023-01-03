@@ -161,12 +161,12 @@ while gamestate == "PLAY":
             gamestate = "STOP"
         if event.type== pygame.MOUSEBUTTONDOWN and event.button == 1:
             mouse=pygame.mouse.get_pos()
-            # Boutton commencez
+            # Boutton  commencez
             if mouse[0] in range(350,350+210) and mouse[1] in range(380,380+35):
                 if action_player == "main_menu":
                     pygame.mixer.Channel(1).play(pygame.mixer.Sound("assets/sound/sound_effect/button_click.wav"))
                     action_player = "nbjoueur_selector"
-            # Retour
+            # Retour selection nombre de joueur
             if mouse[0] in range(10,10+150) and mouse[1] in range(550,550+40):
                 if action_player == "nbjoueur_selector":
                     action_player = "main_menu"
@@ -293,5 +293,4 @@ pygame.display.flip()
 time.sleep(5)
 pygame.quit()
                         
-
 
